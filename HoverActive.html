@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta chatset="utf-8">
+        <title> Hover and Active </title>
+        <style>
+            .vertical-menu {
+                width: 480px;
+                height: 640px;
+            }
+            
+            .vertical-menu a {
+                background-color: white;
+                color: blue;
+                display: block;
+                text-decoration: none;
+            }
+            
+            .vertical-menu a:hover{
+                background-color: blue;
+                color: white;
+            }
+            
+            .vertical-menu a:active{
+                background-color: blue;
+                color: white;
+                
+            }
+            
+            .dropdown{
+                width: 480px;
+                position: relative;
+                display: inline-block;
+                
+            }
+            
+            .dropdown_content{
+                display: none;
+                position: center;
+                z-index: 1;
+            }
+            
+            .dropdown:active .dropdown_content{
+                display: block;
+            }
+            
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1> Hover and Active </h1>
+        
+        <hr>
+        
+        <div class="vertical-menu">
+            <div class="dropdown">
+                <a> Random </a>
+                    <div class="dropdown-content">
+                        <img src=".jpg" alt="" width="100%" class = "center">
+                        <img src=".jpg" alt="" width="100%" class = "center">
+                    </div>
+            </div>
+        
+        </div>
+    
+    
+    </body>
+    
+</html>

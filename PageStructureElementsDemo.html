@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Page Structure Demo </title>
+    </head>
+
+    <body>
+        <header> 
+            <img src="pictures/carrots.jpg" alt="Carrots Logo" width = 250 height = 100/>
+            <h1> Welcome to my Carrots Page</h1>
+        </header>
+        
+        <section id= "1">
+            <nav> 
+                <h2> Recent Publications </h2>
+                <ul> 
+                    <li><a href = "http://www.deitel.com/books/iwhtp5"> 
+                        Internet & Worldwide Web </a>
+                    </li>
+                    <li><a href = "http://www.deitel.com/books/androidfp"> 
+                        Android for Programmers </a>
+                    </li>
+                    <li><a href = "http://www.deitel.com/books/jhtp5"> 
+                        Java How to Program </a>
+                    </li>
+                    <li><a href = "http://www.deitel.com/books/cpphtp8"> 
+                        C++ How to Program </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section id= "2">
+            <h2> How to Make Cool Pictures </h2>
+            <h3><em> Java How to Do Stuff with Pictures </em></h3>
+            
+            <figure>
+                <!--- Percentages can scale width or height --->
+                <img src = "pictures/culutcom.jpg" alt="Picture" 
+                     width = "25%"/>
+                
+                <!--- Em tag to italicize text --->
+                <figcaption><em> Cool Pictures </em></figcaption>
+            </figure>
+            
+            <article>
+                <header>
+                    <h5> From <em>
+                        <a href = "http://www.deitel.com/books/jhtp5"> 
+                        Java How to Program </a> 
+                        </em>
+                    </h5>
+                    
+                </header>
+                
+                <p> Features Include: 
+                    <ul>
+                        <!--- Mark tag to highlight text --->
+                        <li> Rich Elements of Fundamentals<mark>
+                            Two chapters on control statements </mark></li>
+                    </ul>
+                    
+                    <details>
+                        <summary> Recent Testimonials </summary>
+                        <ul>
+                            <li> This book is good </li>
+                        </ul>
+                    </details>
+                
+                
+            </article>
+            
+            <aside> The aside element is not formatted by web browsers
+            </aside>
+            
+            <h2> Deitel Developers Series Books 
+            </h2>
+            
+            <h3><em> Android for Programmers </em></h3>
+            
+            Click <a href = "http://www.deitel.com/books/androidfp"> 
+                        Android for Programmers </a> for more info
+            
+            <h2> Live Lessons </h2>
+            <h3><em>Here are some live lessons click <a href = "http://www.deitel.com/books/LiveLessons"> 
+            Live Lessons </a> to watch them </em></h3>
+            
+        </section>
+        
+        <section id= "3">
+            <h2> Meter Element to display results of how many people are bored: </h2>
+            <!--- Start number on left --->
+            0 <meter min="0" max="50" value="35"></meter> 50
+            
+        </section>
+        
+        <footer>
+            <h6>&copy; 2022 by Avi Yalamanchi </h6>
+            <address> Contact me at <a href = "mailto:ay213@mynsu.nova.edu"> 
+                        my email </a></address>
+        </footer>
+    
+    
+    </body>
+</html>

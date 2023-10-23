@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Positioning </title>
+        
+        <style type='text/css'>
+            .background_image {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+            }
+            
+            .foreground_image {
+                position: absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 2;
+            }
+            
+            .text {
+                position: absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 3;
+                font-size: 20pt;
+                font-family: tahoma, geneva, sans-serif;
+            }
+    </head>
+            
+    <body>
+        <p>
+            <img src="pictures/carrots.jpg" class="background_image" alt="Background Picture" />
+        </p>
+            
+        <p>
+            <img src="pictures/culutcom.jpg" class="foreground_image" alt="Foreground Picture" />
+        </p>
+        
+        <p> class="text"> Hey look I am some words</p>
+        
+            <p style="position: absolute; z-index: 4;"> More words </p> 
+    </body>
+</html>

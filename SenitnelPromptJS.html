@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Control Statements JS </title>
+        
+        <script>
+            let total = 0;
+            let gradeCounter = 0;
+            let grade;
+            let gradeValue;
+            let average;
+            
+            grade = window.prompt("Enter integer grade or Enter -1 to quit: " , "0");
+            
+            gradeValue = parseInt(grade);
+            
+            while (gradeCounter != -1){
+                //End value 0 means it will be 0 if nothing entered
+        
+                total = total + gradeValue;
+                
+                gradeCounter = gradeCounter + 1;
+                
+                grade = window.prompt("Enter integer grade or Enter -1 to quit: " , "0");
+            
+                gradeValue = parseInt(grade);
+                
+                
+            }
+            if (gradeCounter!=0) {
+                average = total/gradeCounter;
+                
+                document.writeln("<h1>Class Average is " + average + "</h1>");
+            }
+            else
+                document.writeln("<h1> Class average is " + average + "</h1>");
+        
+        </script>
+    
+    </head>
+
+
+</html>

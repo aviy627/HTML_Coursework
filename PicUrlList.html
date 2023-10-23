@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Pic Url List</title>
+        <h1> Pic Url List </h1>
+        <style>
+        </style>
+    
+        <script>
+        //Question and Answer Arrays
+        var images = ["www.image",
+                   "www.image",
+                   ]
+        
+        var answers = ["answer 1", "answer 2"]
+        
+        //Functions to Randomize questions and answers
+        function getRand(){
+            var int = Math.floor(Math.random() * 19);
+            
+            document.getElementById("picture").setAttribute.src = Urls[int]
+            return int;
+        }
+            
+        function setRandButtons(int){
+            var int1, int2, int3;
+            var answerButton = Math.floor(1 + Math.random() * 4);
+            
+            var rand1, rand2, rand3 = randomAnswers(int);
+            
+            //Connect int from getRand
+            if (answerButton==1)
+                document.getElementById("button1").setAttribute.value = answers[int];
+                document.getElementById("button2").setAttribute.value = answers[rand1];
+                document.getElementById("button3").setAttribute.value = answers[rand2];
+                document.getElementById("button4").setAttribute.value = answers[rand3];
+            
+            if (answerButton==2)
+                document.getElementById("button2").setAttribute.value = answers[int];
+                document.getElementById("button4").setAttribute.value = answers[rand1];
+                document.getElementById("button1").setAttribute.value = answers[rand2];
+                document.getElementById("button3").setAttribute.value = answers[rand3];
+            
+            if (answerButton==3)
+                document.getElementById("button3").setAttribute.value = answers[int];
+                document.getElementById("button1").setAttribute.value = answers[rand1];
+                document.getElementById("button4").setAttribute.value = answers[rand2];
+                document.getElementById("button2").setAttribute.value = answers[rand3];
+            
+            if (answerButton==4)
+                document.getElementById("button4").setAttribute.value = answers[int];
+                document.getElementById("button3").setAttribute.value = answers[rand1];
+                document.getElementById("button2").setAttribute.value = answers[rand2];
+                document.getElementById("button1").setAttribute.value = answers[rand3];
+        }
+        
+        function randomAnswers(int){
+            var rand1 = Math.floor(Math.random() * 19);
+            var rand2 = Math.floor(Math.random() * 19);
+            var rand3 = Math.floor(Math.random() * 19);
+            
+            while(rand1 == int)
+                rand1 = Math.floor(Math.random() * 19);
+            while(rand2 == int || rand2 == rand1)
+                rand2 = Math.floor(Math.random() * 19);
+            while(rand3 == int || rand3 == rand1 || rand3 == rand2)
+                rand3 = Math.floor(Math.random() * 19);
+            
+            return rand1, rand2, rand3;
+        }
+        
+        //Function for start, next, correct button
+        function start(){
+            var int = getRand();
+            setRandButtons(int);
+            randAnswers(int);
+        }
+        
+        window.addEventListener("load", start, false);
+            
+        function nextButton(){
+            startButton();
+        }
+            
+        //Question#/Correct#
+            
+    
+    </script>
+    
+    </head>
+    <body>
+
+        <img id="picture" src="" alt="">
+        
+        <input id="button 1" type="button" value="">
+        <input id="button 2" type="button" value="">
+        <input id="button 3" type="button" value="">
+        <input id="button 4" type="button" value=""> 
+        
+        <input id="showCorrect" type="button" value="Correct Answer">
+        <input id="nextButton" type="button" value="Next Question" onclick=nextButton()>
+
+    </body>
+
+
+</html>

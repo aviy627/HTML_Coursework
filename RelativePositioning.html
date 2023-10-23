@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Relative Positioning </title>
+        <style type="text/css">
+            p {
+                font-size: 1.3rem;
+                font-family: fantasy, sans-serif, arial;
+            }
+            
+            span {
+                color: red;
+                font-size: .6rem;
+                height: 1rem;    
+            }
+            
+            .super {
+                position: relative;
+                top: -1ex;
+            }
+            
+            .sub {
+                position: relative;
+                bottom: -1ex;
+            }
+            
+            .shiftleft {
+                position: relative;
+                left: -1ex;
+            }
+            
+            .shiftright {
+                position: relative;
+                right: -1ex;
+            }
+        
+        
+        
+        </style>
+    </head>
+    
+    
+    <body>
+    
+        <p> Text here is in <span class="super">superscript</span> </p>
+        <p> Text here is in <span class="sub">subscript</span> </p>
+        <p> Text here is in <span class="shiftleft">shifted left</span> </p>
+        <p> Text here is in <span class="shiftright">shifted right</span>  </p>
+    
+    </body>
+</html>

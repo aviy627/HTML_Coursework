@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset = "utf-8">
+        <title> Autocomplete and Datalists </title>
+    </head>
+    
+    <body>
+        <h1> Autocomplete and Datalist Demo </h1>
+        
+        <form method = "post" autocomplete="on">
+            
+            <p>
+                <label> Name: 
+                    <input type="text" id = "Name" placeholder="Name"/>
+                </label>
+            </p>
+                
+            <p>
+                <label> Email: 
+                    <input type="email" id = "email" placeholder="name@domain.com"/>
+                </label>
+            </p>
+            
+            <p>
+                <label> Birth Month: 
+                    <input type="text" id="txtlist"
+                           placehoder="Select a Month"
+                           list="months"/>
+                        <datalist id=months>
+                            <option value="Jan">
+                            <option value="Feb">
+                            <option value="Mar">
+                            <option value="Apr">
+                            <option value="May">
+                            <option value="Jun">
+                            <option value="Jul">
+                            <option value="Aug">
+                            <option value="Sep">
+                            <option value="Oct">
+                            <option value="Nov">
+                            <option value="Dec">
+                        </datalist>
+                </label>  
+            </p>
+            
+            <p> 
+                <input type="button"  value="Submit"/>
+                <input type="button"  value="Reset"/>
+            </p>
+        
+        
+        </form>
+        
+    </body>
+    
+</html>
